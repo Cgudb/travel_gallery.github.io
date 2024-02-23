@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Auto Search Bar</title>
+    <script src="https://kit.fontawesome.com/60b15483f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Horizontal Navigational Bar -->
+  <nav>
+    <a href="/Home/main.html" class="home-link">Home</a>
+    <a href="/SearchBox/index.html" class="search-link">Search</a>
+    <div class="dropdown">
+      <a class="dropbtn">Explore</a>
+      <div class="dropdown-content">
+        <a href="#">Food</a>
+        <a href="#">Places</a>
+      </div>
+    </div>
+  </nav>
+
+    <div class="search-box">
+        <div class="row">
+            <input type = "text" id = "input-box" placeholder = "Search anything" 
+            autocomplete = "off">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box">
+        </div>
+    </div>
+
+<script src="autocomplete.js"></script>
+</body>
+</html>

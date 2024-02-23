@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/Home/main.html" class="home-link">Home</a>
+    <a href="/SearchBox/index.html" class="search-link">Search</a>
+    <div class="dropdown">
+      <a class="dropbtn">Explore</a>
+      <div class="dropdown-content">
+        <a href="#">Places</a>
+        <a href="#">Food</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Welcome To Dubai</h1>
+  <p>Click on the images to expand and use the horizontal scrollbar to see other images.</p>
+
+  
+  <div class="scroll-container" id="imageGallery">
+    <img src="/Home/Dubai_Sub/dubai1.jpg" alt="Cinque Terre" width="600" height="400" onclick="openImage(this)">
+    <img src="/Home/Dubai_Sub/dubai2.jpg" alt="Forest" width="600" height="400" onclick="openImage(this)">
+    <img src="/Home/Dubai_Sub/dubai3.jpg" alt="Northern Lights" width="600" height="400" onclick="openImage(this)">
+    <img src="/Home/Dubai_Sub/dubai4.jpg" alt="Mountains" width="600" height="400" onclick="openImage(this)">
+  </div>
+
+  <div class="container" id="expandedContainer">
+    <span onclick="closeImage()" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

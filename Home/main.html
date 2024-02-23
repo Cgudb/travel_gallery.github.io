@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Chanhyeong's Personal Blogging</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link href="https://fonts.cdnfonts.com/css/samsungone" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/Home/Pictures/favicon.png"      
+
+</head>
+<body>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- Horizontal Navigational Bar -->
+  <nav class="navbar">
+    <a href="/Home/main.html" class="home-link">Home</a>
+    <a href="/SearchBox/index.html" class="search-link">Search</a>
+    <div class="dropdown">
+      <a class="dropbtn">Explore</a>
+      <div class="dropdown-content">
+        <a href="/PlacesPage/main.html">Places</a>
+        <a href="#">Food</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Pop Up-->  
+  <!--
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+      <h2>Welcome to our website!</h2>
+      <p>This is a popup message.</p>
+      <label>
+        <input type="checkbox" id="noShowCheckbox"> Don't show for 24 hours
+      </label>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+  -->
+  <!-- Pop Up JavaScript -->
+  <script src="main.js"></script>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+<h2 class="main-title"></h2>
+<!-- Automatic Slide Show -->
+<div class="slideshow-container">
+  <div class="slide">
+    <img src="/Home/Pictures/dubai1.jpg" alt="">
+  </div>
+
+  <div class="slide">
+    <img src="/Home/Pictures/saudiarabia1.jpg" alt="">
+  </div>
+
+  <div class="slide">
+    <img src="/Home/Pictures/saudirarbia2.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="/Home/Pictures/southkorea.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="/Home/Pictures/Canada2.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="/Home/Pictures/Dubai3.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="/Home/Pictures/newyork1.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="/Home/Pictures/newyork2.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="/Home/Pictures/newyork3.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="/Home/Pictures/WashDC2.jpg" alt="">
+  </div>
+
+
+
+
+  <!-- Add more slides as needed -->
+</div>
+
+
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<script src="slide.js"></script>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- Background Scroll PopUps-->
+  <section class="sec-01">
+    <div class="container">
+      <h3 class="section-title">About Me</h3>
+      <div class="content">
+        <div class="media-info">
+          <li><a href="#" class="icon"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/bae_chanhyeong/" class="icon"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#" class="icon"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://github.com/ChanhyeongBae" class="icon"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="https://discordapp.com/users/759257453530710056" class="icon"><i class="fab fa-discord"></i> Discord</a></li>
+        </div>
+        <div class="image">
+          <img src="/Home/Pictures/mainP.JPG" alt="">
+        </div>
+        <div class="text-box">
+          <h3>Chanhyeong Bae</h3>
+          <p>Junior in Cerritos High School who likes Math and Coding.</p>
+        </div>
+        <!--
+        <div class="media-icons">
+          <a href="#" class="icon"><i class="fab fa-discord"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon" style="margin-right: 21px;"><i class="fab fa-facebook"></i></a>
+        </div>
+      -->
+      </div>
+    </div>
+  </section>
+
+<!--
+이게 원래
+  <section class="sec-01">
+    <div class="container">
+      <h3 class="section-title">About Me</h3>
+      <div class="content">
+        <div class="image">
+          <img src="unnamed.jpg" alt="">
+        </div>
+        <div class="text-box">
+          <h3>Chanhyeong Bae</h3>
+          <p>This is the paragraph that you want to write anything down!</p>
+        </div>
+        <div class="media-icons">
+          <a href="#" class="icon"><i class="fab fa-discord"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon" style="margin-right: 21px;"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+  </div>
+</section>
+-->
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- Item Display-->
+  <h1 style="font-family: 'SamsungOne', Arial, sans-serif; text-align: center; margin-top: 20px;">Some of the Recommended Places</h1>
+
+  <div class="display">
+    <div class="display_item" id="box1">
+      <img class="display_image" src="/Home/Pictures/dubai1.jpg" alt="">
+      <div class="display_detail">
+        <p>Dubai</p>
+        <a href="/Home/Dubai_Sub/main.html" class="button">View More</a>
+      </div>
+    </div>
+
+    <div class="display_item" id="box2">
+      <img class="display_image" src="/Home/Pictures/southkorea.jpg" alt="">
+      <div class="display_detail">
+        <p>South Korea</p>
+        <a href="https://example.com" class="button">View More</a>
+      </div>
+    </div>
+
+    <div class="display_item" id="box3">
+      <img class="display_image" src="/Home/Pictures/saudiarabia1.jpg" alt="">
+      <div class="display_detail">
+        <p>Saudi Arabia</p>
+        <a href="https://example.com" class="button">View More</a>
+      </div>
+    </div>
+    <div class="display_item" id="box1">
+      <img class="display_image" src="/Home/Pictures/japan.jpg" alt="">
+      <div class="display_detail">
+        <p>Japan</p>
+        <a href="https://example.com" class="button">View More</a>
+      </div>
+    </div>
+
+    <div class="display_item" id="box2">
+      <img class="display_image" src="/Home/Pictures/WashDC.jpg" alt="">
+      <div class="display_detail">
+        <p>Washington D.C</p>
+        <a href="https://example.com" class="button">View More</a>
+      </div>
+    </div>
+
+    <div class="display_item" id="box3">
+      <img class="display_image" src="/Home/Pictures/Yosemite.jpg" alt="">
+      <div class="display_detail">
+        <p>Yosemite</p>
+        <a href="https://example.com" class="button">View More</a>
+      </div>
+    </div>
+    <div class="display_item" id="box2">
+      <img class="display_image" src="/Home/Pictures/Canada.jpg" alt="">
+      <div class="display_detail">
+        <p>Canada</p>
+        <a href="https://example.com" class="button">View More</a>
+      </div>
+    </div>
+  </div>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Section 2 -->
+  <section class="sec-02">
+    <div class="container">
+      <h3 class="section-title">Food</h3>
+      <div class="content">
+        <div class="image">
+          <img src="/Home/Pictures/Food/food11.jpg" alt="">
+        </div>
+        <div class="info">
+          <h4 class="info-title">The Best Dessert</h4>
+          <p>
+            So, I gotta tell you about this amazing dessert 
+            I had in Dubai - hands down one of the best! 
+            Yeah, it packed a bunch of calories, but it was totally 
+            worth every bite. That sweet treat made my time 
+            there extra special and tasty!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Section 3 
+  <section class="sec-03">
+    <div class="container">
+      <h3 class="section-title">Travel</h3>
+      <div class="content">
+        <div class="media-info">
+          <li><a href="#" class="icon"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/bae_chanhyeong/" class="icon"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#" class="icon"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://github.com/ChanhyeongBae" class="icon"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="https://discordapp.com/users/759257453530710056" class="icon"><i class="fab fa-discord"></i> Discord</a></li>
+        </div>
+        <div class="image">
+          <img src="unnamed.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+<section class="sec-03">
+  <div class="container">
+    <h3 class="section-title">Travel</h3>
+    <div class="content">
+      <div class="image">
+        <img src="/Home/Pictures/mainT.jpg" alt="">
+      </div>
+      <div class="text-box">
+        <h3>Edge of The World</h3>
+        <p>This is the picture that I took an year ago when 
+          I visited the Edge of The World in Saudi Arabia.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script>
+
+    /*
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+  
+    //elements
+      ScrollReveal().reveal('.main-title, .section-title', {delay: 40, origin: 'left' });
+      ScrollReveal().reveal('.sec-01, .image', {delay: 300, origin: 'bottom' }); 
+      ScrollReveal().reveal('.text-box', {delay: 400, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', {delay: 200, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02, .image, .sec-03, .image', {delay: 200, origin: 'top'});
+      ScrollReveal().reveal('.media-info li', {delay: 200, origin: 'left', interval: 200 });
+    
+    // Elements within the "display" class
+      ScrollReveal().reveal('.display_item', { delay: 40, origin: 'left' });
+      ScrollReveal().reveal('.display_image, .display_detail', { delay: 200, origin: 'bottom' });
+      ScrollReveal().reveal('.display_button', { delay: 400, origin: 'right' });
+    */
+    </script>
+  
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- Solid Line + Search Box-->
+  <hr class="solid">
+  <h1 class="Search-Box-Q">Looking for something else?</h1>
+  <div class="search-box">
+    <div class="row">
+        <input type = "text" id = "input-box" placeholder = "Search anything" 
+        autocomplete = "off">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="result-box">
+    </div>
+</div>
+
+<div class="button-container">
+  <a href="/Subpage/main.html" class="rounded-button">Dubai</a>
+  <a href="link2" class="rounded-button">Canada</a>
+  <a href="link3" class="rounded-button">Saudi Arabia</a>
+  <a href="link4" class="rounded-button">South Korea</a>
+  <a href="link5" class="rounded-button">Japan</a>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- Solid Line Credit-->
+<div class = bot_info>
+  <hr class="solid">
+  <h2 style="margin-top:25px; margin-left:30px; color: white">Contact:</h2>
+  <div class="contact">
+    <p>Phone Number: (213) 302 - 1944</p>
+    <p>Support Email: <a href="mailto:baechanhyeong08@gmail.com">baechanhyeong08@gmail.com</a></p>  
+  </div>  
+</div>
+</body>
+</html>
