@@ -44,11 +44,13 @@ img {
 }
 
 button {
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  height: 200px;
+  width: 700px;
+  background-color: #3498db00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
 }
 
 .text {
@@ -61,7 +63,7 @@ button {
     color: #fff;
     opacity: 1;
     transition: opacity 0.3s ease;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .text1 {
@@ -74,39 +76,46 @@ button {
   color: black;
   opacity: 1;
   transition: opacity 0.3s ease;
-  font-size: 20px;
+  font-size: 4dvh;
 }
 
 nav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  .navbar {
-    background-color: #333;
-    overflow: hidden;
-    margin: 0 80px; /* 80px margin on both left and right */
-  }
-  
-  nav a {
-    display: inline-block; /* Display links in a single line */
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav .home-link {
-    float: left; /* Float the Home link to the right */
-  }
-  
-  nav .search-link {
-    float: left; /* Float the Home link to the right */
-  }
-  
-  nav .dropdown {
-    float: left; /* Float the Explore dropdown to the left */
-  }
+  background-color: #333;
+  overflow: hidden;
+  height: 60px;
+
+}
+
+.navbar {
+  background-color: #3333338d;
+  overflow: hidden;
+  /*margin: 0 80px;*/ /* 80px margin on both left and right */
+}
+
+nav a {
+  display: inline-block; /* Display links in a single line */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav .home-link {
+  float: left; /* Float the Home link to the right */
+  margin-left: 220px;
+  margin-top:8px;
+}
+
+nav .search-link {
+  float: left; /* Float the Home link to the right */
+  margin-top:8px;
+}
+
+nav .dropdown {
+  float: left; /* Float the Explore dropdown to the left */
+  margin-top:8px;
+
+}
   
   nav .dropdown-content {
     display: none;

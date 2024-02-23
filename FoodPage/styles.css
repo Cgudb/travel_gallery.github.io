@@ -44,25 +44,27 @@ img {
 }
 
 button {
-    padding: 10px;
-    background-color: #3498db;
+    height: 200px;
+    width: 700px;
+    background-color: #3498db00;
     color: #fff;
     border: none;
     cursor: pointer;
+    font-size: 40px;
 }
 
 .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 16px;
-    color: #fff;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-size: 40px;
 }
-
 
 .text1 {
   position: absolute;
@@ -74,40 +76,47 @@ button {
   color: black;
   opacity: 1;
   transition: opacity 0.3s ease;
-  font-size: 20px;
+  font-size: 33px;
 }
 
 
 nav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  .navbar {
-    background-color: #333;
-    overflow: hidden;
-    margin: 0 80px; /* 80px margin on both left and right */
-  }
-  
-  nav a {
-    display: inline-block; /* Display links in a single line */
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav .home-link {
-    float: left; /* Float the Home link to the right */
-  }
-  
-  nav .search-link {
-    float: left; /* Float the Home link to the right */
-  }
-  
-  nav .dropdown {
-    float: left; /* Float the Explore dropdown to the left */
-  }
+  background-color: #333;
+  overflow: hidden;
+  height: 60px;
+
+}
+
+.navbar {
+  background-color: #3333338d;
+  overflow: hidden;
+  /*margin: 0 80px;*/ /* 80px margin on both left and right */
+}
+
+nav a {
+  display: inline-block; /* Display links in a single line */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav .home-link {
+  float: left; /* Float the Home link to the right */
+  margin-left: 220px;
+  margin-top:8px;
+}
+
+nav .search-link {
+  float: left; /* Float the Home link to the right */
+  margin-top:8px;
+}
+
+nav .dropdown {
+  float: left; /* Float the Explore dropdown to the left */
+  margin-top:8px;
+
+}
   
   nav .dropdown-content {
     display: none;

@@ -30,12 +30,15 @@ body {
 nav {
   background-color: #333;
   overflow: hidden;
+  height: 60px;
+  margin-bottom: -50px;
+
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #3333338d;
   overflow: hidden;
-  margin: 0 80px; /* 80px margin on both left and right */
+  /*margin: 0 80px;*/ /* 80px margin on both left and right */
 }
 
 nav a {
@@ -48,14 +51,19 @@ nav a {
 
 nav .home-link {
   float: left; /* Float the Home link to the right */
+  margin-left: 220px;
+  margin-top:8px;
 }
 
 nav .search-link {
   float: left; /* Float the Home link to the right */
+  margin-top:8px;
 }
 
 nav .dropdown {
   float: left; /* Float the Explore dropdown to the left */
+  margin-top:8px;
+
 }
 
 nav .dropdown-content {
@@ -439,11 +447,6 @@ button .fa-solid{
 
 /* --------------------------------------------------------------------------------------------------------------------------*/
 /* Item Display */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
 .display {
   display: flex;
