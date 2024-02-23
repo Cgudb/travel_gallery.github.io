@@ -7,35 +7,75 @@
     <title>Rounded Boxes</title>
 </head>
 <body>
+
+    <nav class="navbar">
+        <a href="/Home/index.html" class="home-link">Home</a>
+        <a href="/SearchBox/index.html" class="search-link">Search</a>
+        <div class="dropdown">
+          <a class="dropbtn">Explore</a>
+          <div class="dropdown-content">
+            <a href="/PlacesPage/index.html">Places</a>
+            <a href="/FoodPage/index.html">Food</a>
+          </div>
+        </div>
+      </nav>
+
     <div class="container">
         <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
-            <img src="/Home/Pictures/Canada.jpg" alt="Image 1">
+            <img src="dubaiM.jpg" alt="Image 1">
             <div class="overlay">
-                <button onclick="redirectToLink('link1')">Visit Link</button>
+                <button onclick="redirectToLink('/Home/Dubai_Sub/index.html')">Visit Link</button>
             </div>
             <div class="text">Dubai</div>
         </div>
         <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
-            <img src="/Home/Pictures/Canada2.jpg" alt="Image 2">
+            <img src="southkoreaM.jpg" alt="Image 2">
             <div class="overlay">
-                <button onclick="redirectToLink('link2')">Visit Link</button>
+                <button onclick="redirectToLink('/Home/South_Korea_Sub/index.html')">Visit Link</button>
             </div>
-            <div class="text">Another Location</div>
+            <div class="text">South Korea</div>
         </div>
         <!-- Add more rounded boxes as needed -->
         <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
-            <img src="/Home/Pictures/Canada.jpg" alt="Image 1">
+            <img src="saudiarabiaM.jpg" alt="Image 1">
             <div class="overlay">
-                <button onclick="redirectToLink('link1')">Visit Link</button>
+                <button onclick="redirectToLink('/Home/Saudi_Arabia_Sub/index.html')">Visit Link</button>
             </div>
-            <div class="text">Dubai</div>
+            <div class="text">Saudi Arabia</div>
         </div>
         <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
-            <img src="/Home/Pictures/Canada2.jpg" alt="Image 2">
+            <img src="japanM.jpg" alt="Image 2">
             <div class="overlay">
-                <button onclick="redirectToLink('link2')">Visit Link</button>
+                <button onclick="redirectToLink('/Home/Japan_Sub/index.html')">Visit Link</button>
             </div>
-            <div class="text">Another Location</div>
+            <div class="text">Japan</div>
+        </div>
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="washingtonM.jpg" alt="Image 2">
+            <div class="overlay">
+                <button onclick="redirectToLink('/Home/Washington_DC_Sub/index.html')">Visit Link</button>
+            </div>
+            <div class="text">Washington D.C.</div>
+        </div>
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="yosemiteM.jpg" alt="Image 2">
+            <div class="overlay">
+                <button onclick="redirectToLink('/Home/Yosemite_Sub/index.html')">Visit Link</button>
+            </div>
+            <div class="text">Yosemite</div>
+        </div>
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="canadaM.jpg" alt="Image 2">
+            <div class="overlay">
+                <button onclick="redirectToLink('/Home/Canada_Sub/index.html')">Visit Link</button>
+            </div>
+            <div class="text">Canada</div>
+        </div>
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="white.jpg" alt="Image 2">
+            <div class="overlay">
+            </div>
+            <div class="text1" style="font-weight: bold;">Next Trip is scheduled on 3/15!</div>
         </div>
     </div>
 

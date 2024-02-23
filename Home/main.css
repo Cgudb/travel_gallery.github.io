@@ -22,6 +22,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url('/PlacesPage/background.jpg');
+  background-size: cover; /* This property ensures the image covers the entire container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 nav {
@@ -289,6 +292,9 @@ img {
   height: 639.875px; /* Set the desired height */
 }
 
+/*
+This is the arrow for automatic slideshow
+
 .prev,
 .next {
   position: absolute;
@@ -310,6 +316,8 @@ img {
 .next {
   right: 10px;
 }
+
+*/
 
 /* Solid border */
 hr.solid {
@@ -492,3 +500,144 @@ body {
   display: inline-block;
 }
 
+/* --------------------------------------------------------------------------------------------------------------------------*/
+/* Pop Up FeedBack Form */
+
+/*
+.popup {
+  position: fixed;
+  top: 400px; 
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.feedbackBtn {
+  margin-bottom: 10px;
+  width: 30px; 
+  height: 100px; 
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg); 
+  white-space: nowrap; 
+  color: #fff; 
+  padding: 10px;
+  border: none; 
+}
+
+.feedbackForm {
+  display: center;
+  width: 500px;
+  height: 390px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.feedbackForm label,
+.feedbackForm select,
+.feedbackForm button {
+  margin-bottom: 10px;
+}
+
+*/
+
+.popup {
+  position: fixed;
+  top: 400px; /* Adjust the top position as needed */
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.feedbackBtn {
+  margin-bottom: 10px;
+  width: 30px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  padding: 10px;
+  border: none;
+}
+
+.feedbackForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 390px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.feedbackForm label,
+.feedbackForm select,
+.feedbackForm button {
+  margin-bottom: 10px;
+}
+
+.bottom-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto; /* Push the buttons to the bottom */
+}
+
+.closeSubmitBtn {
+  width: 100px; /* Adjust the width as needed */
+  margin-bottom: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.range-slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.range-label {
+  margin-right: 10px;
+}
+
+.range-slider {
+  width: 300px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.textbox-container {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: vertical; /* Allow vertical resizing of the textarea */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

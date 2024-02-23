@@ -78,6 +78,17 @@ nav {
   overflow: hidden;
 }
 
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  margin: 0 80px; /* 80px margin on both left and right */
+}
+
 nav a {
   display: inline-block; /* Display links in a single line */
   color: white;
@@ -125,7 +136,10 @@ nav .dropdown:hover .dropdown-content {
 }
 
 .content {
+  /*
   margin-right: 20px;
+  */
+  margin: 0 40px;
   /* Adjust the margin to the right */
 }
 

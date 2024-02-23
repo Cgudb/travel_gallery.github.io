@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rounded Boxes</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="/Home/index.html" class="home-link">Home</a>
+        <a href="/SearchBox/index.html" class="search-link">Search</a>
+        <div class="dropdown">
+          <a class="dropbtn">Explore</a>
+          <div class="dropdown-content">
+            <a href="/PlacesPage/index.html">Places</a>
+            <a href="/FoodPage/index.html">Food</a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="dubaiF.jpg" alt="Image 1">
+            <div class="overlay">
+                <button onclick="redirectToLink('/Home/Dubai_Sub/index.html')">Visit Link</button>
+            </div>
+            <div class="text">Dubai</div>
+        </div>
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="koreanF.jpg" alt="Image 2">
+            <div class="overlay">
+                <button onclick="redirectToLink('link2')">Visit Link</button>
+            </div>
+            <div class="text">South Korea</div>
+        </div>
+        <!-- Add more rounded boxes as needed -->
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="saudiF.jpg" alt="Image 1">
+            <div class="overlay">
+                <button onclick="redirectToLink('link1')">Visit Link</button>
+            </div>
+            <div class="text">Saudi Arabia</div>
+        </div>
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="japanF.jpg" alt="Image 2">
+            <div class="overlay">
+                <button onclick="redirectToLink('link2')">Visit Link</button>
+            </div>
+            <div class="text">Japan</div>
+        </div>
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="washingtonF.jpg" alt="Image 2">
+            <div class="overlay">
+                <button onclick="redirectToLink('link2')">Visit Link</button>
+            </div>
+            <div class="text">Washington D.C.</div>
+        </div>
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="/PlacesPage/white.jpg" alt="Image 2">
+            <div class="overlay">
+            </div>
+            <div class="text1">Yosemite</div>
+            <p class="text1">No Picture Available for Canada</p>
+        </div>
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="/PlacesPage/white.jpg" alt="Image 2">
+            <div class="overlay">
+            </div>
+            <div class="text1">Canada</div>
+            <p class="text1">No Picture Available for Canada</p>
+        </div>
+        <div class="rounded-box" onmouseover="showButton(this)" onmouseout="hideButton(this)">
+            <img src="/PlacesPage/white.jpg" alt="Image 2">
+            <div class="overlay">
+            </div>
+            <div class="text1" style="font-weight: bold;">Next Trip is scheduled on 3/15!</div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

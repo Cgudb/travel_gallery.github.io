@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+      /* Full height */
+      height: 50%;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Images used */
+    .img1 {
+      background-image: url("japan1.jpg");
+    }
+
+    .img2 {
+      background-image: url("japan2.jpg");
+    }
+
+    .img3 {
+      background-image: url("japan3.jpg");
+    }
+
+    .img4 {
+      background-image: url("japan4.jpg");
+    }
+
+    .img5 {
+      background-image: url("japan5.jpg");
+    }
+
+    .img6 {
+      background-image: url("japan6.jpg");
+    }
+
+    /* Position text in the middle of the page/image */
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      font-size: 80px;
+      border: 10px solid #f1f1f1;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: auto;
+      /* Allow the width to expand based on content */
+      max-width: 80%;
+      /* Limit the width to a maximum value if needed */
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Style for the fixed button */
+    .button_next {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 10px solid #f1f1f1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 3;
+    }
+
+    .button_prev {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 10px solid #f1f1f1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 3;
+    }
+
+    .scrollDown{
+      font-size: 25px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-image img1"></div>
+  <div class="bg-image img2"></div>
+  <div class="bg-image img3"></div>
+  <div class="bg-image img4"></div>
+  <div class="bg-image img5"></div>
+  <div class="bg-image img6"></div>
+
+  <button class="button_prev" onclick="window.location.href='/PlacesPage/index.html'">Previous</button>
+  <button class="button_next" onclick="window.location.href='/Subpage/index.html'">Next Chapter</button>
+  <div class="bg-text">Welcome To Japan
+    <p class="scrollDown">Scroll Down For More!</p>
+  </div>
+
+</body>
+
+</html>
